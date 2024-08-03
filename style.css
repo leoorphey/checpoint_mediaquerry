@@ -1,0 +1,439 @@
+/* ajout de police */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+@font-face {
+    font-family: 'fashionable';
+    src: url(font/Fashionable.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:'Bermis' ;
+    src: url(font/BemirsDemoVersionRegular-L360Z.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Goddess';
+    src: url(font/MGN\ Goddess.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+:root{
+        --white:#ffffff;
+        --black:#030712:
+    }
+
+
+*{
+    padding: 0;
+    margin: 0; 
+}
+
+body{
+    background-color: var(--white);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 2px;
+    max-width: 100%;
+    background-color: var(--white);
+
+}
+
+.logo{
+    font-family: 'Goddess';
+    font-size: 40px;
+    font-weight: bold;
+    margin-left:10px ;
+    padding-right: 40px;
+    border-right: solid 2px;
+    
+}
+
+ .title{
+    font-family:'bermis';
+    font-size:40px;
+    font-weight: bold; 
+    text-align: center;
+    margin-right: 20%;
+}
+
+.affiche{
+    background-image: url(img/CoverDrMood.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    max-width: 100%;
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.article h2{
+    width: 50%;
+    font-family:'fashionable' ;  
+    font-size: 100px;     
+    text-align: center; 
+    margin-top: 90px;
+}
+
+.article p{
+    width: 40%;
+    text-align: center;
+    font-size: small;
+    margin-top:30px;
+    margin-left: 65px;
+}
+
+.article button{
+    margin-left: 85%;
+    padding: 30px;
+    border-color: var(--black);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: black;
+    color: var(--white);
+}
+
+.logo{
+
+    max-width: 100%;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo img{
+    width: 100px;
+    
+}
+
+section{
+    position: relative;
+    max-width: 100%;
+    align-items: center;
+}
+ .cagoule{
+    width: 100%;
+    display: flex;
+ }
+ .cagoulecard{
+    flex: 1;
+ }
+
+ .cagoule img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+ }
+
+ .texte{
+    font-family: 'Goddess';
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    color: var(--white);  
+    top: 45%;
+    left: 25%;
+    width: 600px;;
+
+ }
+ .texte p{
+    text-align: center;
+ }
+
+ .LINE{
+    display: flex;
+    justify-content: space-between;
+    width: 100%; 
+    padding: 30px;
+ }
+
+ .LINE h2{
+    font-family:'fashionable' ;
+    font-size: 40px;
+    margin-left: 50px;
+ }
+
+ .LINE button{
+    padding: 20px;
+    border-color: var(--black);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color: black;
+    color: var(--white);
+    margin-right: 50px;
+ }
+
+ .articleshop{
+    display: flex;
+    justify-content: space-around;
+    height: 400px;
+    width: 100%;
+ }
+
+ .articleshop div img{
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+ }
+
+ .price{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 20px;
+    
+ }
+
+ .price h2{
+    font-family: 'fashionable';
+    font-weight: bold;
+ }
+
+ .price p{
+    font-family: 'Libre Baskerville';
+ }
+/* ecran ordinateur */
+
+@media screen and (max-width:1024px) {
+
+    .logo{
+        font-size: 30px;
+        
+    }
+
+    
+     .title{
+        font-size:30px;
+     }      
+
+
+     
+    .affiche{
+        height: 400px;
+        max-width: 100%;
+    }
+
+
+    .article h2{
+        width: 50%;
+        font-size: 80px;     
+    
+    }
+
+    .article p{
+        width: 40%;
+        text-align: center;
+        font-size: small;
+        margin-top:30px;
+        margin-left: 65px;
+    }
+
+    .article button{
+        margin-left: 85%;
+        padding: 20px;
+        border-color: var(--black);
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        background-color: black;
+        color: var(--white);
+    }
+
+    .logo img{
+        width: 50px;
+        
+    }
+
+    .articleshop div img{
+        height: 350px;
+        width: 200px;
+        object-fit: cover;
+     }   
+    
+}
+ 
+/* ecran tablette */
+
+@media screen and (max-width:768px) {
+
+    .logo{
+        font-size: 25px;
+        
+    }
+
+    
+     .title{
+        font-size:25px;
+     }      
+
+
+     
+    .affiche{
+        height: 350px;
+        max-width: 100%;
+    }
+
+
+    .article h2{
+        width: 50%;
+        font-size: 50px;     
+    
+    }
+
+    .article p{
+        width: 40%;
+        text-align: center;
+        font-size: small;
+        margin-top:30px;
+        margin-left: 50px;
+    }
+
+     .texte{
+    font-family: 'Goddess';
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    color: var(--white);  
+    top: 45%;
+    left: 10%;
+    width: 600px;;
+
+ }
+
+    .articleshop div img{
+        height: 310px;
+        width: 170px;
+        object-fit: cover;
+     }   
+    
+}
+
+
+/* smatphone */
+@media screen and (max-width:360px) {
+
+    .logo{
+        font-size: 11px;
+        
+    }
+
+    
+     .title{
+        font-size:11px;
+     }      
+
+
+     
+    .affiche{
+        height: 200px;
+        max-width: 100%;
+    }
+
+
+    .article h2{
+        margin-top: 20px;
+        width: 50%;
+        font-size: 25px;     
+    
+    }
+
+    .article p{
+        width: 40%;
+        text-align: center;
+        font-size:8px;
+        margin-top:30px;
+        margin-left: 15px;
+    }
+
+    .article button{
+        margin-top: 10px;
+        margin-left: 65px;
+        padding: 5px;
+        border-color: var(--black);
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        font-size: 8px;
+        background-color: black;
+        color: var(--white);
+    }
+
+    .cagoule img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+     }
+    
+
+     .texte{
+    font-family: 'Goddess';
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    color: var(--white);  
+    top: 45%;
+    left: 8%;
+    width: 300px
+
+ }
+    .articleshop{
+        flex-direction: column;
+    }
+
+    .articleshop div{
+        margin-bottom:20px ;
+    }
+
+    .articleshop div img{
+        height: 300px;
+        width: 200px;
+        object-fit: cover;
+    
+     }   
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
